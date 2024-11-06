@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import {createBrowserRouter,RouterProvider,Navigate} from "react-router-dom";
 import './index.css'
 import Auth from './components/Pages/Auth/auth';
 import Login from './components/Pages/Login/login';
@@ -45,6 +45,10 @@ const router = createBrowserRouter([
   },
 {path:'OrderList',
   element:<Order/>
+},
+{
+  path: "*",
+  element: <Navigate to="/Auth" replace />,
 }]
   }
 ]);
