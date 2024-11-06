@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# تجاهل node_modules
+node_modules/
+# تجاهل ملفات البناء
+dist/
+build/
+
+# تجاهل الملفات الحساسة
+.env
+
+# تجاهل ملفات النظام
+.DS_Store
+Thumbs.db
