@@ -1,0 +1,61 @@
+.homePage{
+    .addProduct{
+        .formProduct{
+            padding: 0px 30px 0px 30px;
+            h1{
+                padding-top: 30px;
+                color: var(--h1-add-color);
+            }
+            form{
+                .formProductFather{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                }
+                .formProductFatherLeft{
+                    label{
+                        display: block;
+                        margin-bottom: 10px;
+                        color: var(--p-add-color);
+                    }
+                    input{
+                        border: 1px solid gray;
+                        background-color: var(--input-bg);
+                        padding:15px 8px 15px 8px;
+                        width: 450px;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+                .inputFile{
+                    
+                    width: 550px;
+                    height: 200px;
+                    border:2px dashed rgb(117, 117, 251);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                button{
+                    padding: 5px 30px 5px 30px;
+                    border-radius: 5px;
+                    border: 0px;
+                    background-color: var(--btn-bg);
+                }
+            }
+        }
+    }
+}
+body.light{
+    --h1-add-color:rgb(0, 0, 0);
+    --p-add-color:black;
+    --input-bg:rgb(255, 255, 255);
+    --btn-bg:rgb(201, 228, 250);
+
+}
+body.dark {
+    --h1-add-color: rgb(255, 255, 255); 
+    --p-add-color:white;
+    --input-bg:rgb(239, 234, 234);
+    --btn-bg:rgb(189, 196, 202);
+}

@@ -1,0 +1,150 @@
+.auth{
+    position: relative;
+    .login-form{
+        background-color: rgb(255, 255, 255);
+        width: 40vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        height: max-content;
+
+        h1{
+            margin-top: 15px;
+            text-align: center;
+        }
+        p.dec{
+            margin-top: 15px;
+            text-align: center;
+        }
+        form{
+            .father-input{
+                margin-top: 30px;
+                label{
+                    display: block;
+                    margin-left: 50px;
+                }
+                input{
+                    margin-left: 50px;
+                    margin-top: 8px;
+                    width: 80%;
+                    height: 50px;
+                    border: 0px;
+                    background-color: rgb(240, 239, 239);
+                    border-radius: 15px;
+                    padding-left: 15px;
+                }
+
+                input::placeholder{
+                    color: rgb(192, 190, 190);
+                }
+                
+            }
+        }
+        button.btn{
+            width: 250px;
+            height: 40px;
+            margin: 0 auto;
+            padding: 8px 0px 8px 0px;
+            background-color: rgb(72, 128, 250);
+            border: 0px;
+            border-radius: 10px;
+            color: white;
+            margin-top: 150px;
+        }
+        p.message{
+            margin:0 auto;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: rgb(119, 119, 119);
+        }
+    }
+    .reg-form{
+        background-color: rgb(255, 255, 255);
+        width: 60vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        h1{
+            margin-top: 15px;
+            text-align: center;
+        }
+        p.dec{
+            margin-top: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        form {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+          }
+          
+          .father-input {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .father-input input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+          .father-input:has(input[type='email']) {
+            grid-column: span 3; 
+          }
+          .father-input:has(input[type='password']) {
+            grid-column: span 2; 
+          }
+          .father-input:has(input[type='file']) {
+            grid-column: span 2; 
+          }
+          button {
+            grid-column: span 3; 
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #0056b3;
+          
+        }
+         button.btn{
+            width: 250px;
+            height: 40px;
+            
+            margin: 0 auto;
+            padding: 8px 0px 8px 0px;
+            background-color: rgb(72, 128, 250);
+            border: 0px;
+            border-radius: 10px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+        p.message{
+            margin: 0 auto;
+            margin:0 auto;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: rgb(119, 119, 119);
+        } 
+        
+    }
+    
+}

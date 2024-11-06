@@ -1,0 +1,13 @@
+.homePage{
+    .addProduct{
+        margin-left: 250px;
+        background-color:var(--product-bg-color);
+        height: calc(100vh - 60px);
+    }
+}  body.light{
+    --product-bg-color:rgb(239, 237, 237);
+
+}
+body.dark {
+    --product-bg-color: rgb(87, 93, 103); 
+}
