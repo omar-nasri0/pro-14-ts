@@ -62,7 +62,7 @@ function form({title , btn , input}:prop) {
 
             localStorage.setItem('product', JSON.stringify(res.data));
             console.log('Product added successfully', res.data);
-            Navigate('/');
+            Navigate('/Home');
         } catch (err) {
             if (axios.isAxiosError(err)) {
                 console.error('Error message:', err.message);

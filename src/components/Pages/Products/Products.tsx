@@ -34,7 +34,7 @@ const Products = () => {
   }, []);
 console.log(products)
 const handleEdit  = (id :number)=>{
-  Navigate(`/EditItem/${id}`)
+  Navigate(`/Home/EditItem/${id}`)
 }
 const delet = async(id:number)=>{
   const confirm :boolean= window.confirm ('Are you sure to delet this item!!!')
@@ -62,7 +62,7 @@ const delet = async(id:number)=>{
   return (
     <div className="products-container">
       <h2>All Products</h2>
-      <Link to ='/AddProduct'className="create-product">+ Create Product</Link>
+      <Link to ='/Home/AddProduct'className="create-product">+ Create Product</Link>
       {loading ? (
         <p style={{marginTop:"15px"}}>Loading products...</p>
       ) : (

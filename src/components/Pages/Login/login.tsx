@@ -33,7 +33,7 @@ function Login() {
                 message={message}
                 btn="Sign In" 
                 url = {url}
-                to='/'
+                to='/Home'
             />
         </div>
     );

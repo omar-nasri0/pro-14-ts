@@ -107,7 +107,7 @@ function Form({ title, btn, input }: Prop) {
                     'Content-Type': 'multipart/form-data'
                  },
              });
-             navigate('/');
+             navigate('/Home');
          } catch (err) {
              if (axios.isAxiosError(err)) {
                  console.error('Error message:', err.message);
