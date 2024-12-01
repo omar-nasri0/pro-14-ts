@@ -64,7 +64,8 @@
     }
     .reg-form{
         background-color: rgb(255, 255, 255);
-        width: 60vw;
+        width: 40vw;
+        height: 100vh;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -73,19 +74,19 @@
         flex-direction: column;
         border-radius: 15px;
         h1{
-            margin-top: 15px;
+            margin-top: 5px;
             text-align: center;
         }
         p.dec{
-            margin-top: 15px;
+            margin-top: 5px;
             margin-bottom: 30px;
             text-align: center;
         }
         form {
-            margin-top: 30px;
+            margin-top: 5px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px; 
+            gap: 10px; 
             max-width: 800px; 
             margin: 0 auto; 
           }
@@ -96,10 +97,10 @@
           }
           
           .father-input input {
-            padding: 10px;
+            padding: 5px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            margin-top: 5px;
+            margin-top: 3px;
           }
           .father-input:has(input[type='email']) {
             grid-column: span 3; 
@@ -140,8 +141,8 @@
         p.message{
             margin: 0 auto;
             margin:0 auto;
-            margin-bottom: 15px;
-            margin-top: 15px;
+            margin-bottom: 5px;
+            margin-top: 5px;
             color: rgb(119, 119, 119);
         } 
         
